@@ -123,6 +123,7 @@ footer p { margin: 0; color: var(--muted); }
       <h2>¿Cuándo y dónde?</h2>
       <p class="line"><b>Lugar:</b> Cristino, Colonia Carolina</p>
       <p class="line"><b>Vestimenta:</b> <span class="em">Glam / Hollywood</span></p>
+      <p class="line"><b>Llevar bebidas</b></p>
       <div class="btns">
         <a class="btn" id="mapBtn" href="#" target="_blank" rel="noopener">Ver ubicación</a>
         <a class="btn ghost" id="calBtn" href="#" target="_blank" rel="noopener">Agendar</a>
@@ -141,9 +142,6 @@ footer p { margin: 0; color: var(--muted); }
           <label for="si"><input id="si" type="radio" name="asiste" value="si" checked><span>Sí, voy</span></label>
           <label for="no"><input id="no" type="radio" name="asiste" value="no"><span>No puedo</span></label>
         </fieldset>
-        <label for="acomp"><span>¿Quién te acompaña? <em>(opcional)</em></span>
-          <input id="acomp" name="acomp" type="text" placeholder="Ej: mi mamá y mi hermano">
-        </label>
         <label for="menu"><span>Menú especial <em>(opcional)</em></span>
           <input id="menu" name="menu" type="text" placeholder="Celíaco, vegetariano, etc.">
         </label>
@@ -229,7 +227,6 @@ footer p { margin: 0; color: var(--muted); }
     var t = "¡Hola " + CONFIG.nombre + "! Soy " + (val("nombre") || "…") + ". " +
       (va ? "Confirmo que voy a tu cumple de 15 el 5 de diciembre. 🎉" : "Lamentablemente no puedo ir a tu cumple de 15.");
     if (va) {
-      if (val("acomp")) t += "\nMe acompaña: " + val("acomp") + ".";
       if (val("menu")) t += "\nMenú especial: " + val("menu") + ".";
       if (val("cancion")) t += "\nCanción que no puede faltar: " + val("cancion") + ".";
     }
