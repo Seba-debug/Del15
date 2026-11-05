@@ -109,7 +109,7 @@ footer p { margin: 0; color: var(--muted); }
       <p class="name gold">DELFINA</p>
       <svg class="orn" viewBox="0 0 260 18" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M0 9H100M160 9H260"/><path d="M100 9l10-6 10 6-10 6zM140 9l10-6 10 6-10 6z"/><path d="M120 9l10-8 10 8-10 8z" fill="currentColor"/></svg>
       <p class="date">05 de diciembre de 2026</p>
-      <p class="line">22:30 hs</p>
+      <p class="line">21:00 hs</p>
       <div class="tiles" id="tiles" role="timer" aria-live="off">
         <div class="tile"><b id="d">--</b><small>días</small></div>
         <div class="tile"><b id="h">--</b><small>hs</small></div>
@@ -177,7 +177,7 @@ footer p { margin: 0; color: var(--muted); }
   // ====== DATOS EDITABLES ======
   var CONFIG = {
     nombre: "Delfina",
-    fecha: "2026-12-05T22:30:00-03:00",
+    fecha: "2026-12-05T21:00:00-03:00",
     lugar: "Cristino, Colonia Carolina",
     mapa: "https://www.google.com/maps/search/Cristino%20Multiespacio/@-29.1559001,-59.16753247,17z?hl=es",
     alias: "gamalina2011.mp",
@@ -189,7 +189,7 @@ footer p { margin: 0; color: var(--muted); }
   $("mapBtn").href = CONFIG.mapa;
   $("calBtn").href = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
     "&text=" + encodeURIComponent("Los 15 de " + CONFIG.nombre) +
-    "&dates=20261205T223000/20261206T060000&ctz=America/Argentina/Buenos_Aires" +
+    "&dates=20261205T210000/20261206T050000&ctz=America/Argentina/Buenos_Aires" +
     "&location=" + encodeURIComponent(CONFIG.lugar) +
     "&details=" + encodeURIComponent("Vestimenta: Glam / Hollywood. Mapa: " + CONFIG.mapa);
 
